@@ -29,11 +29,29 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			this.timer_main = new System.Windows.Forms.Timer(this.components);
+			this.SuspendLayout();
+			// 
+			// timer_main
+			// 
+			this.timer_main.Enabled = true;
+			this.timer_main.Interval = 86;
+			// 
+			// Form1
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Text = "Form1";
+			this.ClientSize = new System.Drawing.Size(885, 480);
+			this.Name = "Form1";
+			this.Text = "ZCalendar";
+			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+			this.ResumeLayout(false);
+
 		}
 
 		#endregion
+
+		private System.Windows.Forms.Timer timer_main;
 	}
 }
 
